@@ -235,37 +235,61 @@ Tambahkan kode ini di dalam class _FutureStatePage
 ### Langkah 1: install plugin geolocator
 Tambahkan plugin geolocator dengan mengetik perintah berikut di terminal.
 
+<img width="300" alt="image" src="image-26.png">
+
 ### Langkah 2: Tambah permission GPS
 Jika Anda menargetkan untuk platform Android, maka tambahkan baris kode berikut di file android/app/src/main/androidmanifest.xml
+
+<img width="500" alt="image" src="image-27.png">
 
 ### Langkah 3: Buat file geolocation.dart
 Tambahkan file baru ini di folder lib project Anda.
 
+<img width="300" alt="image" src="image-28.png">
+
 ### Langkah 4: Buat StatefulWidget
 Buat class LocationScreen di dalam file geolocation.dart
 
+<img width="400" alt="image" src="image-29.png">
+
 ### Langkah 5: Isi kode geolocation.dart
+
+<img width="500" alt="image" src="image-30.png">
 
 > **Soal 11**
 >
 > * Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+> 
+>   <img width="300" alt="image" src="image-31.png">
 
 ### Langkah 6: Edit main.dart
 Panggil screen baru tersebut di file main Anda seperti berikut.
 
+<img width="300" alt="image" src="image-33.png">
+
 ### Langkah 7: Run
 Run project Anda di device atau emulator (bukan browser), maka akan tampil seperti berikut ini.
 
+<img width="300" alt="image" src="image-32.png">
+
 ### Langkah 8: Tambahkan animasi loading
 Tambahkan widget loading seperti kode berikut. Lalu hot restart, perhatikan perubahannya.
+
+<img width="300" alt="image" src="image-34.png">
 
 > **Soal 12**
 >
 > * Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
 >
+>   <img width="300" alt="image" src="image-35.png">
+>
 > * Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
 >
+>   Dapat, karena saya menggunakan dependensi geolocator : ^10.1 yang secara otomatis akan menambahkan paket geolocator_web yang mendukung geolokasi di browser
+>
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
+>
+>   <img width="200" alt="gif" src="gambar/praktikum 6-1.gif">
 
 ## Praktikum 7: Manajemen Future dengan FutureBuilder
 
