@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +35,32 @@ class FuturePage extends StatefulWidget {
 class _FuturePageState extends State<FuturePage> {
   String result = '';
   bool isLoading = false;
+  late Completer completer;
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  /* 
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds : 5));
+    completer.complete(42);
+  }
+
+  */
+
+  calculate() async {
+    try {
+      await new Future.delayed(const Duration(seconds: 5));
+    completer.complete(42);
+
+    } catch (e) {
+      completer.completeError({});
+    } 
+
+  }
 
   Future<Response> getData() async{
     const authority = 'www.googleapis.com';
@@ -87,7 +114,11 @@ class _FuturePageState extends State<FuturePage> {
                     setState(() {
                       isLoading = true;
                     });
-                    count().catchError((_) {
+                    getNumber().then((value){
+                      setState(() {
+                        result = value.toString();
+                      });
+                    }).catchError((e) {
                       result = 'An error has occurred';
                     }).whenComplete(() {
                       setState(() {

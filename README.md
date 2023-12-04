@@ -100,32 +100,50 @@ Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat 
 ### Langkah 1: Buka main.dart
 Pastikan telah impor package async berikut.
 
+<img width="300" alt="image" src="image-11.png">
+
 ### Langkah 2: Tambahkan variabel dan method
 Tambahkan variabel late dan method di class _FuturePageState seperti ini.
+
+<img width="300" alt="image" src="image-12.png">
 
 ### Langkah 3: Ganti isi kode onPressed()
 Tambahkan kode berikut pada fungsi onPressed(). Kode sebelumnya bisa Anda comment.
 
+<img width="300" alt="image" src="image-13.png">
+
 ### Langkah 4: Run
 Terakhir, run atau tekan F5 untuk melihat hasilnya jika memang belum running. Bisa juga lakukan hot restart jika aplikasi sudah running. Maka hasilnya akan seperti gambar berikut ini. Setelah 5 detik, maka angka 42 akan tampil.
+
+<img width="300" alt="image" src="gambar/image-14.png">
 
 > **Soal 5**
 >
 > * Jelaskan maksud kode langkah 2 tersebut!
 >
+>   Langkah 2 mendefinisikan variabel completer dan dua metode, yaitu getNumber() dan calculate(), dalam class _FuturePageState. completer digunakan sebagai objek Completer, yang memungkinkan pembuatan nilai Future secara manual. Metode getNumber() menginisialisasi completer, memanggil metode calculate() yang mensimulasikan operasi yang memakan waktu, dan mengembalikan completer.future. Dengan ini, saat operasi selesai, completer.complete(42) dipanggil, dan nilai 42 dapat diakses melalui completer.future. Langkah-langkah tersebut menciptakan mekanisme untuk menghasilkan nilai asinkron setelah suatu operasi selesai, dan Completer digunakan untuk mengelola alur eksekusi dan nilai Future.
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+>
+>   <img width="200" alt="gif" src="gambar/praktikum 3-1.gif">
 
 ### Langkah 5: Ganti method calculate()
 Gantilah isi code method calculate() seperti kode berikut, atau Anda dapat membuat calculate2()
 
+<img width="300" alt="image" src="image-15.png">
+
 ### Langkah 6: Pindah ke onPressed()
 Ganti menjadi kode seperti berikut.
+
+<img width="300" alt="image" src="image-16.png">
 
 > **Soal 6**
 >
 > * Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
 >
+>   Langkah 2, 5, dan 6 berkaitan dengan penanganan operasi asinkron menggunakan Completer dan Future dalam konteks Flutter. Pada Langkah 2 memperkenalkan variabel completer dan dua metode, getNumber() dan calculate(), yang bekerja bersama untuk menghasilkan nilai asinkron. Pada Langkah 5 menggantikan isi metode calculate() dengan penanganan error yang lebih rinci, memungkinkan program untuk menangani dan mengatasi kesalahan yang mungkin terjadi selama eksekusi operasi. dan Pada Langkah 6 memperbarui bagian onPressed() untuk memanfaatkan hasil dari operasi asinkron, menggunakan .then() untuk menangkap nilai ketika operasi selesai dan .catchError() untuk menangani kesalahan
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
+> 
+>   <img width="200" alt="gif" src="gambar/praktikum 3-2.gif">
 
 ## Praktikum 4: Memanggil Future secara paralel
 
