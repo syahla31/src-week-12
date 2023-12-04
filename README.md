@@ -150,8 +150,12 @@ Ganti menjadi kode seperti berikut.
 ### Langkah 1: Buka file main.dart
 Tambahkan method ini ke dalam class _FuturePageState
 
+<img width="300" alt="image" src="image-17.png">
+
 ### Langkah 2: Edit onPressed()
 Anda bisa hapus atau comment kode sebelumnya, kemudian panggil method dari langkah 1 tersebut.
+
+<img width="300" alt="image" src="image-18.png">
 
 ### Langkah 3: Run
 Anda akan melihat hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan praktikum sebelumnya menunggu sampai 9 detik.
@@ -159,13 +163,21 @@ Anda akan melihat hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan
 > **Soal 7**
 >
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7".
+>
+>   <img width="200" alt="gif" src="gambar/praktikum 4-1.gif">
 
 ### Langkah 4: Ganti variabel futureGroup
 Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
 
+<img width="300" alt="image" src="image-19.png">
+
 > **Soal 8**
 >
 > * Jelaskan maksud perbedaan kode langkah 1 dan 4!
+>
+>   Langkah 1: Di dalam langkah ini, kita membuat grup dari tiga operasi yang memakan waktu lama. Ketika grup tersebut selesai, kita menjumlahkan hasil dari operasi-operasi tersebut dan memperbarui tampilan widget.
+>
+>   Langkah 4: Di dalam langkah ini, kita menunggu sampai tiga operasi yang memakan waktu lama selesai. Ketika ketiga operasi tersebut selesai, kita mengumpulkan hasil dari operasi-operasi tersebut dan memperbarui tampilan widget.
 
 ## Praktikum 5: Menangani Respon Error pada Async Code
 

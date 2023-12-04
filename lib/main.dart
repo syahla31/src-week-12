@@ -94,6 +94,31 @@ class _FuturePageState extends State<FuturePage> {
     });
   }
 
+  void returnFG() {
+    /*
+    FutureGroup<int> futureGroup = FutureGroup<int>();
+    futureGroup.add(returnOneAsync());
+    futureGroup.add(returnTwoAsync());
+    futureGroup.add(returnThreeAsync());
+    futureGroup.close();
+    futureGroup.future.then((List<int> value) {
+    */
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
+    futures.then((List<int> value) {
+      int total = 0;
+      for (var element in value) {
+        total += element;
+      }
+      setState(() {
+        result = total.toString();
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -110,22 +135,7 @@ class _FuturePageState extends State<FuturePage> {
                     : null,
                 child: const Text('GO!'),
                 onPressed: () {
-                  if (!isLoading) {
-                    setState(() {
-                      isLoading = true;
-                    });
-                    getNumber().then((value){
-                      setState(() {
-                        result = value.toString();
-                      });
-                    }).catchError((e) {
-                      result = 'An error has occurred';
-                    }).whenComplete(() {
-                      setState(() {
-                          isLoading = false;
-                        });
-                    });
-                  }
+                  returnFG();
                 }),
           const Spacer(),
           Text(result),
