@@ -289,39 +289,56 @@ Tambahkan widget loading seperti kode berikut. Lalu hot restart, perhatikan peru
 >
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
 >
->   <img width="200" alt="gif" src="gambar/praktikum 6-1.gif">
+>   <img width="200" alt="gif" src="gambar/praktikum 6.gif">
 
 ## Praktikum 7: Manajemen Future dengan FutureBuilder
 
 ### Langkah 1: Modifikasi method getPosition()
 Buka file geolocation.dart kemudian ganti isi method dengan kode ini.
 
+<img width="300" alt="image" src="image-37.png">
+
 ### Langkah 2: Tambah variabel
 Tambah variabel ini di class _LocationScreenState
 
+<img width="300" alt="image" src="image-36.png">
+
 ### Langkah 3: Tambah initState()
-Tambah method ini dan set variabel position
+Tambah method ini dan set variabel 
+
+<img width="300" alt="image" src="image-38.png">
 
 ### Langkah 4: Edit method build()
 Ketik kode berikut dan sesuaikan. Kode lama bisa Anda comment atau hapus.
+
+<img width="400" alt="image" src="image-39.png">
 
 > **Soal 13**
 >
 > * Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
 > 
+>   FutureBuilder adalah alat yang berguna untuk menangani operasi asynchronous di Flutter. Ini dapat membantu menyederhanakan dan membersihkan kode, meningkatkan keterbacaan kode, mengurangi boilerplate, dan menyediakan cara yang lebih terstruktur untuk menangani state dan kondisi UI.
+>
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13".
 > 
+>   <img width="200" alt="gif" src="gambar/praktikum 7.gif">
+>
 > * Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
 
 ### Langkah 5: Tambah handling error
 Tambahkan kode berikut untuk menangani ketika terjadi error. Kemudian hot restart.
 
+<img width="400" alt="image" src="image-40.png">
+
 > **Soal 14**
 >
 > * Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
 >
+>   Tidak ada perbedaan dari tampilan UI namun jika terjadi error saat pengambilan data lokasi, maka akan menampilkan peringatan
+>
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
-
+>
+>   <img width="200" alt="gif" src="gambar/praktikum 7.gif">
 
 ## Praktikum 8: Navigation route dengan Future Function
 
