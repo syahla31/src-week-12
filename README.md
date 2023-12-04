@@ -164,7 +164,7 @@ Anda akan melihat hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan
 >
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7".
 >
->   <img width="200" alt="gif" src="gambar/praktikum 4-1.gif">
+>   <img width="200" alt="gif" src="gambar/praktikum 4.gif">
 
 ### Langkah 4: Ganti variabel futureGroup
 Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
@@ -184,22 +184,51 @@ Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
 ### Langkah 1: Buka file main.dart
 Tambahkan method ini ke dalam class _FuturePageState
 
+<img width="300" alt="image" src="image-20.png">
+
 ### Langkah 2: ElevatedButton
 Ganti dengan kode berikut
+
+<img width="300" alt="image" src="image-21.png">
 
 ### Langkah 3: Run
 Lakukan run dan klik tombol GO! maka akan menghasilkan seperti gambar berikut.
 
+<img width="300" alt="image" src="image-22.png">
+
+Pada bagian debug console akan melihat teks Complete seperti berikut.
+
+<img width="300" alt="image" src="image-23.png">
+
 > **Soal 9**
 >
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
+>
+>   <img width="200" alt="gif" src="gambar/praktikum 5-1.gif">
 
 ### Langkah 4: Tambah method handleError()
 Tambahkan kode ini di dalam class _FutureStatePage
 
+<img width="300" alt="image" src="image-24.png">
+
 > **Soal 10**
 >
 > * Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+>
+>   <table>
+>    <tr>
+>    <th>Panggil method handleError</th>
+>    <th>Hasil Run</th>
+>    </tr>
+>    <tr>
+>    <th><img src="image-25.png"></th>
+>    <th><img width="200" src="gambar/praktikum 5-2.gif"></th>
+>    </tr>
+>   </table>
+
+>
+>   Metode returnError() berfungsi untuk menyimulasikan kondisi kesalahan. Metode ini akan menunggu selama 2 detik, lalu memicu kesalahan dengan kode kesalahan 404.
+>   Metode handleError() berfungsi untuk menangani kesalahan yang mungkin terjadi. Metode ini akan mencoba mengeksekusi metode returnError(), dan jika metode tersebut menghasilkan kesalahan, maka kesalahan tersebut akan ditangkap dan ditampilkan di tampilan widget.
 
 ## Praktikum 6: Menggunakan Future dengan StatefulWidget
 
