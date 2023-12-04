@@ -20,40 +20,44 @@ Kemudian Tambahkan dependensi http dengan mengetik perintah berikut di terminal.
 ### Langkah 2: Cek file pubspec.yaml
 Jika berhasil install plugin, pastikan plugin http telah ada di file pubspec ini seperti berikut.
 
-![Alt text](image-1.png)
+<img width="300" alt="image" src="image-1.png">
 
 ### Langkah 3: Buka file main.dart
 > **Soal 1**
 >
 > * Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan Anda.
-> ![Alt text](image-2.png)
+>
+>   <img width="300" alt="image" src="image-2.png">
 
 ### Langkah 4: Tambah method getData()
 Tambahkan method ini ke dalam class _FuturePageState yang berguna untuk mengambil data dari API Google Books.
 
-![Alt text](image-3.png)
+<img width="300" alt="image" src="image-3.png">
 
 > **Soal 2**
 >
 > * Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel path di kode tersebut. Caranya ambil di URL browser Anda seperti gambar berikut ini.
 > 
-> ![Alt text](image-4.png)
+>   <img width="300" alt="image" src="image-4.png">
 >
 > * Kemudian cobalah akses di browser URI tersebut dengan lengkap seperti ini. Jika menampilkan data JSON, maka Anda telah berhasil. Lakukan capture milik Anda dan tulis di README pada laporan praktikum. Lalu lakukan commit dengan pesan "W12: Soal 2".
 >
-> ![Alt text](image-5.png)
+>   <img width="300" alt="image" src="image-5.png">
 
 ### Langkah 5: Tambah kode di ElevatedButton
 Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
 
-![Alt text](image-6.png)
+<img width="300" alt="image" src="image-6.png">
 
 > **Soal 3**
 >
 > * Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
 > 
 >   Pada langkah kelima, dilakukan penggunaan metode substring(0, 450) untuk mengekstraksi 450 karakter pertama dari respons HTTP untuk membatasi panjang teks yang akan ditampilkan dalam aplikasi. Penggunaan catchErrordigunakan untuk mengatasi kemungkinan terjadinya kesalahan selama proses permintaan data. Jika terdapat kesalahan saat pengambilan data, maka  pesan 'An error has occurred' akan dimasukkan ke variabel result dan ditampilkan.
+>
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 3".
+>
+>   <img width="200" alt="gif" src="gambar/praktikum 1.gif">
 
 
 ## Praktikum 2: Menggunakan await/async untuk menghindari callbacks
@@ -61,20 +65,35 @@ Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
 ### Langkah 1: Buka file main.dart
 Tambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageState.
 
+<img width="300" alt="image" src="image-7.png">
+
 ### Langkah 2: Tambah method count()
 Lalu tambahkan lagi method ini di bawah ketiga method sebelumnya.
+
+<img width="300" alt="image" src="image-8.png">
 
 ### Langkah 3: Panggil count()
 Lakukan comment kode sebelumnya, ubah isi kode onPressed() menjadi seperti berikut.
 
+<img width="300" alt="image" src="image-9.png">
+
 ### Langkah 4: Run
 Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat seperti gambar berikut, hasil angka 6 akan tampil setelah delay 9 detik.
+
+<img width="300" alt="image" src="image-10.png">
 
 > **Soal 4**
 >
 > * Jelaskan maksud kode langkah 1 dan 2 tersebut!
 >
+>      Langkah 1: Di dalam file main.dart, kita menambahkan tiga metode baru di dalam class _FuturePageState. Metode-metode tersebut adalah returnOneAsync, returnTwoAsync, dan returnThreeAsync. Metode-metode ini mensimulasikan operasi asynchronous dengan menunggu selama 3 detik. Setelah 3 detik, metode-metode ini akan mengembalikan nilai integer.
+>
+>      Langkah 2: Metode count() menunggu ketiga operasi tersebut selesai. Ketika ketiga operasi tersebut selesai, metode count() akan melakukan sesuatu, seperti mengubah tampilan widget.
+>
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 4".
+> 
+>   <img width="200" alt="gif" src="gambar/praktikum 2.gif">
+
 
 ## Praktikum 3: Menggunakan Completer di Future
 
