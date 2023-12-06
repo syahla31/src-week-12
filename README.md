@@ -347,22 +347,34 @@ Buatlah file baru ini di project lib Anda.
 
 ### Langkah 2: Isi kode navigation_first.dart
 
+<img width="300" alt="image" src="image-41.png">
+
 > **Soal 15**
 > 
 > * Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
 >
 > * Silakan ganti dengan warna tema favorit Anda.
+>
+>   <img width="300" alt="image" src="image-42.png">
 
 ### Langkah 3: Tambah method di class _NavigationFirstState
 Tambahkan method ini.
 
+<img width="450" alt="image" src="image-44.png">
+
 ### Langkah 4: Buat file baru navigation_second.dart
 Buat file baru ini di project lib Anda. Silakan jika ingin mengelompokkan view menjadi satu folder dan sesuaikan impor yang dibutuhkan.
 
+<img width="300" alt="image" src="image-43.png">
+
 ### Langkah 5: Buat class NavigationSecond dengan StatefulWidget
+
+<img width="300" alt="image" src="image-45.png">
 
 ### Langkah 6: Edit main.dart
 Lakukan edit properti home.
+
+<img width="300" alt="image" src="image-46.png">
 
 ### Langkah 7: Run
 Lakukan run, jika terjadi error silakan diperbaiki.
@@ -371,9 +383,17 @@ Lakukan run, jika terjadi error silakan diperbaiki.
 > 
 > * Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
 >
+>   <img width="200" alt="gif" src="gambar/praktikum 8.gif">
+>
+>   Setelah klik Change Color maka kita diarahkan ke NavigationSecond. Setiap kali tombol di layar NavigationSecond, variabel color diatur sesuai dengan warna yang sesuai dengan tombol yang diklik . Setelah itu, menggunakan Navigator.pop(context, color), warna tersebut dikirim kembali ke layar NavigationFirst. Ketika kita kembali ke NavigationFirst, warna yang dikirim kembali digunakan untuk mengatur warna latar belakang layar (backgroundColor: color).
+>
 > * Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
 >
+>   <img width="300" alt="image" src="image-47.png">
+>
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
+>
+>   <img width="200" alt="gif" src="gambar/praktikum 8-1.gif">
 
 
 ## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
