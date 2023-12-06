@@ -15,39 +15,39 @@ Buatlah sebuah project flutter baru dengan nama books di folder src week-12 repo
 
 Kemudian Tambahkan dependensi http dengan mengetik perintah berikut di terminal.
 
-<img width="300" alt="image" src="image.png">
+<img width="300" alt="image" src="gambar/image.png">
 
 ### Langkah 2: Cek file pubspec.yaml
 Jika berhasil install plugin, pastikan plugin http telah ada di file pubspec ini seperti berikut.
 
-<img width="300" alt="image" src="image-1.png">
+<img width="300" alt="image" src="gambar/image-1.png">
 
 ### Langkah 3: Buka file main.dart
 > **Soal 1**
 >
 > * Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan Anda.
 >
->   <img width="300" alt="image" src="image-2.png">
+>   <img width="300" alt="image" src="gambar/image-2.png">
 
 ### Langkah 4: Tambah method getData()
 Tambahkan method ini ke dalam class _FuturePageState yang berguna untuk mengambil data dari API Google Books.
 
-<img width="300" alt="image" src="image-3.png">
+<img width="300" alt="image" src="gambar/image-3.png">
 
 > **Soal 2**
 >
 > * Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel path di kode tersebut. Caranya ambil di URL browser Anda seperti gambar berikut ini.
 > 
->   <img width="300" alt="image" src="image-4.png">
+>   <img width="300" alt="image" src="gambar/image-4.png">
 >
 > * Kemudian cobalah akses di browser URI tersebut dengan lengkap seperti ini. Jika menampilkan data JSON, maka Anda telah berhasil. Lakukan capture milik Anda dan tulis di README pada laporan praktikum. Lalu lakukan commit dengan pesan "W12: Soal 2".
 >
->   <img width="300" alt="image" src="image-5.png">
+>   <img width="300" alt="image" src="gambar/image-5.png">
 
 ### Langkah 5: Tambah kode di ElevatedButton
 Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
 
-<img width="300" alt="image" src="image-6.png">
+<img width="300" alt="image" src="gambar/image-6.png">
 
 > **Soal 3**
 >
@@ -65,22 +65,22 @@ Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
 ### Langkah 1: Buka file main.dart
 Tambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageState.
 
-<img width="300" alt="image" src="image-7.png">
+<img width="300" alt="image" src="gambar/image-7.png">
 
 ### Langkah 2: Tambah method count()
 Lalu tambahkan lagi method ini di bawah ketiga method sebelumnya.
 
-<img width="300" alt="image" src="image-8.png">
+<img width="300" alt="image" src="gambar/image-8.png">
 
 ### Langkah 3: Panggil count()
 Lakukan comment kode sebelumnya, ubah isi kode onPressed() menjadi seperti berikut.
 
-<img width="300" alt="image" src="image-9.png">
+<img width="300" alt="image" src="gambar/image-9.png">
 
 ### Langkah 4: Run
 Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat seperti gambar berikut, hasil angka 6 akan tampil setelah delay 9 detik.
 
-<img width="300" alt="image" src="image-10.png">
+<img width="300" alt="image" src="gambar/image-10.png">
 
 > **Soal 4**
 >
@@ -100,17 +100,17 @@ Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat 
 ### Langkah 1: Buka main.dart
 Pastikan telah impor package async berikut.
 
-<img width="300" alt="image" src="image-11.png">
+<img width="300" alt="image" src="gambar/image-11.png">
 
 ### Langkah 2: Tambahkan variabel dan method
 Tambahkan variabel late dan method di class _FuturePageState seperti ini.
 
-<img width="300" alt="image" src="image-12.png">
+<img width="300" alt="image" src="gambar/image-12.png">
 
 ### Langkah 3: Ganti isi kode onPressed()
 Tambahkan kode berikut pada fungsi onPressed(). Kode sebelumnya bisa Anda comment.
 
-<img width="300" alt="image" src="image-13.png">
+<img width="300" alt="image" src="gambar/image-13.png">
 
 ### Langkah 4: Run
 Terakhir, run atau tekan F5 untuk melihat hasilnya jika memang belum running. Bisa juga lakukan hot restart jika aplikasi sudah running. Maka hasilnya akan seperti gambar berikut ini. Setelah 5 detik, maka angka 42 akan tampil.
@@ -129,12 +129,12 @@ Terakhir, run atau tekan F5 untuk melihat hasilnya jika memang belum running. Bi
 ### Langkah 5: Ganti method calculate()
 Gantilah isi code method calculate() seperti kode berikut, atau Anda dapat membuat calculate2()
 
-<img width="300" alt="image" src="image-15.png">
+<img width="300" alt="image" src="gambar/image-15.png">
 
 ### Langkah 6: Pindah ke onPressed()
 Ganti menjadi kode seperti berikut.
 
-<img width="300" alt="image" src="image-16.png">
+<img width="300" alt="image" src="gambar/image-16.png">
 
 > **Soal 6**
 >
@@ -150,12 +150,12 @@ Ganti menjadi kode seperti berikut.
 ### Langkah 1: Buka file main.dart
 Tambahkan method ini ke dalam class _FuturePageState
 
-<img width="300" alt="image" src="image-17.png">
+<img width="300" alt="image" src="gambar/image-17.png">
 
 ### Langkah 2: Edit onPressed()
 Anda bisa hapus atau comment kode sebelumnya, kemudian panggil method dari langkah 1 tersebut.
 
-<img width="300" alt="image" src="image-18.png">
+<img width="300" alt="image" src="gambar/image-18.png">
 
 ### Langkah 3: Run
 Anda akan melihat hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan praktikum sebelumnya menunggu sampai 9 detik.
@@ -169,7 +169,7 @@ Anda akan melihat hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan
 ### Langkah 4: Ganti variabel futureGroup
 Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
 
-<img width="300" alt="image" src="image-19.png">
+<img width="300" alt="image" src="gambar/image-19.png">
 
 > **Soal 8**
 >
@@ -184,21 +184,21 @@ Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
 ### Langkah 1: Buka file main.dart
 Tambahkan method ini ke dalam class _FuturePageState
 
-<img width="300" alt="image" src="image-20.png">
+<img width="300" alt="image" src="gambar/image-20.png">
 
 ### Langkah 2: ElevatedButton
 Ganti dengan kode berikut
 
-<img width="300" alt="image" src="image-21.png">
+<img width="300" alt="image" src="gambar/image-21.png">
 
 ### Langkah 3: Run
 Lakukan run dan klik tombol GO! maka akan menghasilkan seperti gambar berikut.
 
-<img width="300" alt="image" src="image-22.png">
+<img width="300" alt="image" src="gambar/image-22.png">
 
 Pada bagian debug console akan melihat teks Complete seperti berikut.
 
-<img width="300" alt="image" src="image-23.png">
+<img width="300" alt="image" src="gambar/image-23.png">
 
 > **Soal 9**
 >
@@ -209,7 +209,7 @@ Pada bagian debug console akan melihat teks Complete seperti berikut.
 ### Langkah 4: Tambah method handleError()
 Tambahkan kode ini di dalam class _FutureStatePage
 
-<img width="300" alt="image" src="image-24.png">
+<img width="300" alt="image" src="gambar/image-24.png">
 
 > **Soal 10**
 >
@@ -221,7 +221,7 @@ Tambahkan kode ini di dalam class _FutureStatePage
 >    <th>Hasil Run</th>
 >    </tr>
 >    <tr>
->    <th><img src="image-25.png"></th>
+>    <th><img src="gambar/image-25.png"></th>
 >    <th><img width="200" src="gambar/praktikum 5-2.gif"></th>
 >    </tr>
 >   </table>
@@ -235,53 +235,53 @@ Tambahkan kode ini di dalam class _FutureStatePage
 ### Langkah 1: install plugin geolocator
 Tambahkan plugin geolocator dengan mengetik perintah berikut di terminal.
 
-<img width="300" alt="image" src="image-26.png">
+<img width="300" alt="image" src="gambar/image-26.png">
 
 ### Langkah 2: Tambah permission GPS
 Jika Anda menargetkan untuk platform Android, maka tambahkan baris kode berikut di file android/app/src/main/androidmanifest.xml
 
-<img width="500" alt="image" src="image-27.png">
+<img width="500" alt="image" src="gambar/image-27.png">
 
 ### Langkah 3: Buat file geolocation.dart
 Tambahkan file baru ini di folder lib project Anda.
 
-<img width="300" alt="image" src="image-28.png">
+<img width="300" alt="image" src="gambar/image-28.png">
 
 ### Langkah 4: Buat StatefulWidget
 Buat class LocationScreen di dalam file geolocation.dart
 
-<img width="400" alt="image" src="image-29.png">
+<img width="400" alt="image" src="gambar/image-29.png">
 
 ### Langkah 5: Isi kode geolocation.dart
 
-<img width="500" alt="image" src="image-30.png">
+<img width="500" alt="image" src="gambar/image-30.png">
 
 > **Soal 11**
 >
 > * Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
 > 
->   <img width="300" alt="image" src="image-31.png">
+>   <img width="300" alt="image" src="gambar/image-31.png">
 
 ### Langkah 6: Edit main.dart
 Panggil screen baru tersebut di file main Anda seperti berikut.
 
-<img width="300" alt="image" src="image-33.png">
+<img width="300" alt="image" src="gambar/image-33.png">
 
 ### Langkah 7: Run
 Run project Anda di device atau emulator (bukan browser), maka akan tampil seperti berikut ini.
 
-<img width="300" alt="image" src="image-32.png">
+<img width="300" alt="image" src="gambar/image-32.png">
 
 ### Langkah 8: Tambahkan animasi loading
 Tambahkan widget loading seperti kode berikut. Lalu hot restart, perhatikan perubahannya.
 
-<img width="300" alt="image" src="image-34.png">
+<img width="300" alt="image" src="gambar/image-34.png">
 
 > **Soal 12**
 >
 > * Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
 >
->   <img width="300" alt="image" src="image-35.png">
+>   <img width="300" alt="image" src="gambar/image-35.png">
 >
 > * Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
 >
@@ -296,22 +296,22 @@ Tambahkan widget loading seperti kode berikut. Lalu hot restart, perhatikan peru
 ### Langkah 1: Modifikasi method getPosition()
 Buka file geolocation.dart kemudian ganti isi method dengan kode ini.
 
-<img width="300" alt="image" src="image-37.png">
+<img width="300" alt="image" src="gambar/image-37.png">
 
 ### Langkah 2: Tambah variabel
 Tambah variabel ini di class _LocationScreenState
 
-<img width="300" alt="image" src="image-36.png">
+<img width="300" alt="image" src="gambar/image-36.png">
 
 ### Langkah 3: Tambah initState()
 Tambah method ini dan set variabel 
 
-<img width="300" alt="image" src="image-38.png">
+<img width="300" alt="image" src="gambar/image-38.png">
 
 ### Langkah 4: Edit method build()
 Ketik kode berikut dan sesuaikan. Kode lama bisa Anda comment atau hapus.
 
-<img width="400" alt="image" src="image-39.png">
+<img width="400" alt="image" src="gambar/image-39.png">
 
 > **Soal 13**
 >
@@ -328,7 +328,7 @@ Ketik kode berikut dan sesuaikan. Kode lama bisa Anda comment atau hapus.
 ### Langkah 5: Tambah handling error
 Tambahkan kode berikut untuk menangani ketika terjadi error. Kemudian hot restart.
 
-<img width="400" alt="image" src="image-40.png">
+<img width="400" alt="image" src="gambar/image-40.png">
 
 > **Soal 14**
 >
@@ -347,7 +347,7 @@ Buatlah file baru ini di project lib Anda.
 
 ### Langkah 2: Isi kode navigation_first.dart
 
-<img width="300" alt="image" src="image-41.png">
+<img width="300" alt="image" src="gambar/image-41.png">
 
 > **Soal 15**
 > 
@@ -355,26 +355,26 @@ Buatlah file baru ini di project lib Anda.
 >
 > * Silakan ganti dengan warna tema favorit Anda.
 >
->   <img width="300" alt="image" src="image-42.png">
+>   <img width="300" alt="image" src="gambar/image-42.png">
 
 ### Langkah 3: Tambah method di class _NavigationFirstState
 Tambahkan method ini.
 
-<img width="450" alt="image" src="image-44.png">
+<img width="450" alt="image" src="gambar/image-44.png">
 
 ### Langkah 4: Buat file baru navigation_second.dart
 Buat file baru ini di project lib Anda. Silakan jika ingin mengelompokkan view menjadi satu folder dan sesuaikan impor yang dibutuhkan.
 
-<img width="300" alt="image" src="image-43.png">
+<img width="300" alt="image" src="gambar/image-43.png">
 
 ### Langkah 5: Buat class NavigationSecond dengan StatefulWidget
 
-<img width="300" alt="image" src="image-45.png">
+<img width="300" alt="image" src="gambar/image-58.png">
 
 ### Langkah 6: Edit main.dart
 Lakukan edit properti home.
 
-<img width="300" alt="image" src="image-46.png">
+<img width="300" alt="image" src="gambar/image-46.png">
 
 ### Langkah 7: Run
 Lakukan run, jika terjadi error silakan diperbaiki.
@@ -389,7 +389,7 @@ Lakukan run, jika terjadi error silakan diperbaiki.
 >
 > * Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
 >
->   <img width="300" alt="image" src="image-47.png">
+>   <img width="300" alt="image" src="gambar/image-47.png">
 >
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
 >
@@ -401,22 +401,42 @@ Lakukan run, jika terjadi error silakan diperbaiki.
 ### Langkah 1: Buat file baru navigation_dialog.dart
 Buat file dart baru di folder lib project Anda.
 
+<img width="300" alt="image" src="gambar/image-48.png">
+
 ### Langkah 2: Isi kode navigation_dialog.dart
+
+<img width="300" alt="image" src="gambar/image-53.png">
 
 ### Langkah 3: Tambah method async
 
+<img width="300" alt="image" src="gambar/image-55.png">
+
 ### Langkah 4: Panggil method di ElevatedButton
+
+<img width="300" alt="image" src="gambar/image-51.png">
 
 ### Langkah 5: Edit main.dart
 Ubah properti home
 
+<img width="300" alt="image" src="gambar/image-52.png">
+
 ### Langkah 6: Run
 Coba ganti warna background dengan widget dialog tersebut. Jika terjadi error, silakan diperbaiki. Jika berhasil, akan tampil seperti gambar berikut.
+
+<img width="300" alt="image" src="gambar/image-56.png">
 
 > **Soal 17**
 >
 > * Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
 >
+>   <img width="200" alt="gif" src="gambar/praktikum 9.gif">
+>
+>   Ketika kita klik tombol "Change Color" di layar NavigationDialogScreen, dialog muncul meminta kita untuk memilih warna. Setelah memilih warna dan menutup dialog, warna latar belakang layar seharusnya berubah, tapi pada kode yang diberikan, pembaruan warna tidak terjadi karena dalam fungsi _showColordialog, pemanggilan setState menggunakan nilai yang sama seperti sebelumnya (color = color). Untuk memperbaikinya, kita perlu menyimpan nilai warna yang dipilih dari dialog dan menggunakan nilai itu dalam pemanggilan setState untuk memastikan pembaruan warna yang benar setelah memilih warna dari dialog. 
+>
 > * Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
 >
+>   <img width="300" alt="image" src="gambar/image-57.png">
+>
 > * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17".
+>
+>   <img width="200" alt="gif" src="gambar/praktikum 9-1.gif">

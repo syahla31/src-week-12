@@ -13,7 +13,7 @@ class _NavigationSecondState extends State<NavigationSecond> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Navigation Second Screen - Zahra'),
+        title: const Text('Navigation Second Screen - Syahla'),
       ),
       body: Center(
         child: Column(
